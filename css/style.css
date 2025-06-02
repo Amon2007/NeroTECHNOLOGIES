@@ -1,0 +1,103 @@
+@import url("https://fonts.googleapis.com/css2?family=Bai+Jamjuree:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bai+Jamjuree:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&family=Bakbak+One&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Bai Jamjuree", sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+.layer-blue {
+  height: 0;
+  width: 30rem;
+  position: absolute;
+  top: 20px;
+  right: 0;
+  box-shadow: 0 0 700px 15px white;
+  rotate: -30deg;
+  z-index: -1;
+}
+
+/* CONTENT */
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgba(11, 10, 12);
+  width: 100%;
+  margin: 0 auto;
+  padding: 42px 59px 35px 95px;
+  position: relative;
+  overflow: hidden;
+}
+
+header h1 {
+  font-family: Inter;
+  margin: 0;
+  font-size: 3rem;
+  font-weight: 200;
+  color: #ffffff;
+  text-shadow: 0px 4px 70px rgba(242, 204, 135, 0.25),
+    0px 4px 4px rgba(0, 0, 0, 0.25);
+  font-size: 36px;
+  font-style: normal;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+  margin-left: 200px;
+  border: 1px solid rgb(255, 255, 255);
+  border-radius: 3rem;
+  padding: 9px 17px;
+  background-color: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(10px);
+  z-index: 1000;
+  transition: background 0.3s ease;
+}
+
+nav.scrolled {
+  background: rgba(0, 0, 0, 0.8);
+}
+.nav-list {
+  display: flex;
+  gap: 3rem;
+  list-style: none;
+}
+nav a {
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: 0.1rem;
+  transition: color 0.2s ease;
+  text-decoration: none;
+  color: #ffffff;
+  z-index: 999;
+}
+.btn-signing {
+  background-color: #a7a7a7;
+  color: black;
+  padding: 0.5rem 1rem;
+  border-radius: 40px;
+  font-size: 1rem;
+  font-weight: 500;
+  transition: background-color 0.2s ease;
+  z-index: 999;
+}
+
+.btn-signing:hover {
+  background-color: white;
+  color: black;
+}
+
+.logo {
+  transition: transform 0.3s ease;
+}
+.logo:hover {
+  transform: rotate(5deg);
+}
