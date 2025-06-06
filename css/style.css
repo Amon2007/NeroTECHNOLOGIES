@@ -1,5 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Bai+Jamjuree:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Bai+Jamjuree:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&family=Bakbak+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bai+Jamjuree:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&family=Bakbak+One&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+:root {
+  --color_desription: #d9d9d9;
+}
 * {
   margin: 0;
   padding: 0;
@@ -7,8 +11,7 @@
 }
 body {
   font-family: "Bai Jamjuree", sans-serif;
-  background-color: #f4f4f4;
-  color: #333;
+  background-color: #000000;
 }
 
 .layer-blue {
@@ -18,17 +21,17 @@ body {
   top: 20px;
   right: 0;
   box-shadow: 0 0 700px 15px white;
-  rotate: -30deg;
+  transform: rotate(-30deg); /* Замість rotate: -30deg; */
   z-index: -1;
 }
 
-/* CONTENT */
+/* Header */
 
 header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: rgba(11, 10, 12);
+  background-color: rgba(11, 10, 12, 1);
   width: 100%;
   margin: 0 auto;
   padding: 42px 59px 35px 95px;
@@ -100,4 +103,65 @@ nav a {
 }
 .logo:hover {
   transform: rotate(5deg);
+}
+/* Main section */
+.main {
+  background: url(/img/HomeLogo.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.welcome {
+  padding: 217px 88px;
+}
+.palka {
+  border-left: 4px solid #fff;
+}
+.content_main {
+  display: flex;
+  flex-direction: column;
+  padding-left: 45px;
+  width: 852px;
+}
+.welcome_title {
+  font-size: 64px;
+  font-weight: 500;
+  background: linear-gradient(
+    to right,
+    #ffffff 0%,
+    #e5ccfb 50%,
+    #c286f6 100%
+  ); /* Градієнт */
+  -webkit-background-clip: text; /* Обрізає фон по тексту (для Chrome/Safari) */
+  -webkit-text-fill-color: transparent; /* Робить текст прозорим (для Chrome/Safari) */
+  background-clip: text; /* Обрізає фон по тексту (для Firefox) */
+  color: transparent;
+  background-clip: text;
+}
+.welcome_desk {
+  color: var(--color_desription);
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-top: 15px;
+}
+.btn {
+  font-size: 32px;
+  font-weight: 700;
+  border-radius: 40px;
+  background: #d8cfcf;
+  padding: 18px 46px;
+
+  margin-top: 56px;
+  text-decoration: none;
+  color: black;
+  width: 286px;
+  height: 76px;
+  transition: background-color 0.2s ease;
+}
+
+.btn:hover {
+  background-color: white;
+  color: black;
 }
