@@ -11,6 +11,7 @@
 body {
   font-family: "Bai Jamjuree", sans-serif;
   background-color: #000000;
+  color: #ffffff;
 }
 
 .layer-blue {
@@ -27,6 +28,7 @@ body {
 /* Header */
 
 header {
+  position: fixed;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -103,7 +105,9 @@ nav a {
 .logo:hover {
   transform: rotate(5deg);
 }
+
 /* Main section */
+
 .main {
   background: url(../img/HomeLogo.jpg);
   background-repeat: no-repeat;
@@ -292,6 +296,255 @@ h2 {
   font-size: 20px;
   font-weight: 400;
 }
+
+/* Section service */
+
+.Our-Services {
+  width: 100%;
+  padding: 60px 0 40px 0;
+  background: transparent;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.title-Service {
+  font-family: "Bakbak One", sans-serif;
+  font-size: 44px;
+  font-weight: 700;
+  color: #fff;
+  text-align: center;
+  margin-bottom: 12px;
+  padding: 0;
+}
+.p-sabtitle-serv {
+  color: #898191;
+  font-size: 24px;
+  font-weight: 400;
+  text-align: center;
+  margin-bottom: 48px;
+  padding: 0;
+}
+.box {
+  display: flex;
+  flex-direction: row;
+  gap: 40px;
+  justify-content: center;
+  width: 100%;
+  max-width: 1200px;
+}
+.box-content {
+  background: #232323;
+  border-radius: 24px;
+  padding: 32px 28px 28px 28px;
+  width: 340px;
+  min-height: 380px;
+  color: #fff;
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.12);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.box-vector {
+  width: 56px;
+  height: 56px;
+  background: #353535;
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 18px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.18);
+}
+.titleforbox {
+  font-family: "Bakbak One", sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+.p-sab-serv {
+  font-family: "Bai Jamjuree", sans-serif;
+  font-size: 16px;
+  color: #d1d1d1;
+  margin-bottom: 18px;
+}
+.list-for-item {
+  font-family: "Bai Jamjuree", sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  color: #fff;
+  list-style: none;
+  padding: 0;
+}
+.list-for-item li {
+  margin-bottom: 10px;
+  position: relative;
+  padding-left: 22px;
+}
+.list-for-item li::before {
+  content: "✓";
+  color: #fff;
+  position: absolute;
+  left: 0;
+  font-size: 16px;
+  top: 0;
+}
+.tree {
+}
+
+/* CSS 4 ЧАСТИ САЙТА */
+.background2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background: linear-gradient(180deg, #21112f 1.63%, #010002 56.74%);
+  height: 900px;
+  width: 100%;
+}
+.txt {
+  text-align: center;
+  width: 328px;
+  height: 108px;
+  margin-top: 166px;
+  margin-bottom: 626px;
+}
+.zag2 {
+  color: #fff;
+  font-family: "Bakbak One";
+  font-size: 48px;
+  font-weight: 400;
+  margin: -3%;
+}
+.poszag {
+  color: #898191;
+  font-family: "Bai Jamjuree";
+  font-size: 24px;
+  font-weight: 400;
+  padding-bottom: 626px;
+  margin-top: 11px;
+}
+.che {
+  margin: 0 0 0 0;
+}
+.zaika {
+  position: absolute;
+  padding-top: 350px;
+}
+.zaikaimg {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+.imgz {
+  max-width: 100%;
+  width: 300px;
+  height: auto;
+  border-radius: 10px;
+  border: solid white 1px;
+}
+.zikatext {
+  margin-top: 20px;
+  text-align: center;
+  color: white;
+  font-family: "Bai Jamjuree";
+}
+
+/* Our reviews */
+
+.clients-reviews {
+  width: 0;
+  height: 535px;
+  flex-shrink: 0;
+}
+.clients-title {
+  font-family: "Bakbak One", sans-serif;
+  font-size: 44px;
+  font-weight: 400;
+  margin: 85px 586px 0;
+  width: max-content;
+}
+.clients-subtitle {
+  color: #898191;
+  font-family: "Bai Jamjuree";
+  font-size: 24px;
+  font-weight: 400;
+  text-align: center;
+  margin-bottom: 64px;
+  white-space: nowrap;
+  padding-left: 618px;
+}
+
+.testimonials-list {
+  display: flex;
+  padding: 65px 92px 45px 92px;
+  flex-direction: row;
+}
+
+.testimonial-card {
+  border: 1px solid #fff;
+  background: #1e1e1e;
+  border-radius: 28px;
+  width: 404px;
+  height: 159px;
+  flex-shrink: 0;
+  min-height: 140px;
+  padding: 21px 22px 24px 22px;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  position: relative;
+}
+.testimonial-card-highlighted {
+  border: 1px solid #fff;
+  background: #1e1e1e;
+  border-radius: 28px;
+  width: 404px;
+  height: 159px;
+  flex-shrink: 0;
+  min-height: 140px;
+  padding: 21px 22px 24px 22px;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  position: relative;
+  margin: 0 74px;
+}
+
+.stars {
+  background: #fff;
+  color: #ffb800;
+  border-radius: 16px;
+  padding: 4px 16px;
+  font-size: 18px;
+  width: fit-content;
+  margin-bottom: 12px;
+  margin-top: 1px;
+}
+
+.view-all-btn {
+  font-family: "Bai Jamjuree";
+  margin: 0 auto;
+  margin: 0 729px;
+  display: block;
+  background: #ededed;
+  color: #222;
+  border: none;
+  border-radius: 22px;
+  padding: 10px 32px;
+  font-size: 20px;
+  font-weight: 500;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: background 0.2s;
+  color: #000;
+}
+.view-all-btn:hover {
+  background: #8e8e8e;
+}
+
 /* Адаптивність для планшетів і мобільних */
 @media (max-width: 900px) {
   header {
@@ -352,64 +605,4 @@ h2 {
     flex-direction: column;
     gap: 32px;
   }
-}
-
-/* CSS 4 ЧАСТИ САЙТА */
-.background2{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background: linear-gradient(180deg, #21112F 1.63%, #010002 56.74%);
-    height: 900px;
-    width: 100%;
-}
-.txt{
-    text-align: center;
-    width:328px;
-    height:108px;
-    margin-top:166px;
-    margin-bottom:626px;
-}
-.zag2{
-    color: #FFF;
-    font-family: "Bakbak One";
-    font-size: 48px;
-    font-weight: 400;
-    margin: -3%;
-}
-.poszag{
-    color: #898191;
-    font-family: "Bai Jamjuree";
-    font-size: 24px;
-    font-weight: 400;
-    padding-bottom: 626px;
-    margin-top: 11px;
-}
-.che{
-    margin: 0 0 0 0;
-}
-.zaika{
-    position: absolute;
-    padding-top: 350px;
-}
-.zaikaimg{
-    display: flex;
-    justify-content: center;
-    width: 100%;
-}
-.imgz {
-    max-width: 100%;
-    width: 300px;
-    height: auto;
-    border-radius: 10px;
-    border: solid white 1px;
-    
-}
-.zikatext {
-    margin-top: 20px;
-    text-align: center;
-    color: white;
-    font-family: "Bai Jamjuree";
 }
