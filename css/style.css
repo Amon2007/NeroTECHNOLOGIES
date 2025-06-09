@@ -14,6 +14,10 @@ body {
   color: #ffffff;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 .layer-blue {
   height: 0;
   width: 30rem;
@@ -29,15 +33,19 @@ body {
 
 header {
   position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  z-index: 1000;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: rgba(11, 10, 12, 1);
-  width: 100%;
+  background: rgba(11, 10, 12, 0.5);
+  backdrop-filter: blur(5px);
   margin: 0 auto;
   padding: 42px 59px 35px 95px;
-  position: relative;
   overflow: hidden;
+  transition: background 0.3s, backdrop-filter 0.3s;
 }
 
 header h1 {
@@ -330,6 +338,9 @@ h2 {
   text-align: center;
   margin-bottom: 122px;
   padding: 0;
+  width: 100%;
+  margin-left: 0;
+  margin-right: 0;
 }
 .box {
   display: flex;
@@ -337,7 +348,6 @@ h2 {
   gap: 40px;
   justify-content: center;
   width: 100%;
-  max-width: 100px;
 }
 .box-content {
   background: #1e1e1e;
@@ -352,6 +362,11 @@ h2 {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  transition: box-shadow 0.2s, transform 0.2s;
+}
+.box-content:hover {
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.18);
+  transform: translateY(-4px) scale(1.02);
 }
 .box-vector {
   width: 87px;
@@ -364,6 +379,10 @@ h2 {
   justify-content: center;
   margin-bottom: 14px;
   filter: drop-shadow(4px 10px 16px #000);
+  transition: filter 0.2s;
+}
+.box-vector:hover {
+  filter: drop-shadow(4px 10px 24px #000);
 }
 .titleforbox {
   font-family: "Bakbak One", sans-serif;
@@ -388,13 +407,13 @@ h2 {
 .list-for-item li {
   margin-bottom: 20px;
   position: relative;
-  padding-left: 36px; /* 24px (іконка) + 12px (відступ) */
+  padding-left: 40px;
 }
 .list-for-item li::before {
   content: "";
   position: absolute;
   left: 0;
-  top: 2px;
+  top: 0;
   width: 24px;
   height: 24px;
   background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M6 12L10.2426 16.2426L18.727 7.75732" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>');
@@ -546,7 +565,7 @@ h2 {
   margin: 0 auto;
   margin: 0 729px;
   display: block;
-  background: #ededed;
+  background: #afafaf;
   color: #222;
   border: none;
   border-radius: 22px;
@@ -555,11 +574,13 @@ h2 {
   font-weight: 500;
   cursor: pointer;
   white-space: nowrap;
-  transition: background 0.2s;
-  color: #000;
+  transition: background 0.2s, color 0.2s, box-shadow 0.2s;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.1);
 }
 .view-all-btn:hover {
-  background: #8e8e8e;
+  background: #fff;
+  color: #222;
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.18);
 }
 
 /* Адаптивність для планшетів і мобільних */
@@ -621,5 +642,182 @@ h2 {
   .bottomrow {
     flex-direction: column;
     gap: 32px;
+  }
+}
+@media (max-width: 600px) {
+  /* Header */
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 16px 8px;
+  }
+  nav {
+    margin-left: 0;
+    gap: 1rem;
+    padding: 6px 4px;
+    border-radius: 1.5rem;
+  }
+  .nav-list {
+    gap: 1rem;
+    flex-wrap: wrap;
+  }
+  .btn-signing {
+    margin-top: 12px;
+    align-self: flex-end;
+    font-size: 14px;
+    padding: 6px 16px;
+  }
+
+  /* Welcome section */
+  .welcome {
+    padding: 32px 4px;
+  }
+  .content_main {
+    width: 100%;
+    padding-left: 0;
+  }
+  .welcome_title {
+    font-size: 24px;
+    text-align: center;
+  }
+  .welcome_desk {
+    font-size: 14px;
+    text-align: center;
+  }
+  .btn {
+    width: 100%;
+    font-size: 16px;
+    padding: 10px 0;
+    margin-top: 12px;
+  }
+
+  /* About section */
+  .content {
+    margin-left: 0;
+    padding-top: 32px;
+    padding-right: 4px;
+    padding-left: 4px;
+  }
+  .zag {
+    font-size: 20px;
+    text-align: center;
+  }
+  .about {
+    font-size: 14px;
+    text-align: center;
+  }
+  .bottomrow {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .misall,
+  .visall {
+    width: 100%;
+  }
+  .divabout,
+  .divzag,
+  .divbefzag {
+    width: 100%;
+    height: auto;
+  }
+
+  /* Our Services section */
+  .Our-Services {
+    padding: 40px 0 24px 0;
+    height: auto;
+  }
+  .title-Service {
+    font-size: 28px;
+    margin-bottom: 8px;
+  }
+  .p-sabtitle-serv {
+    font-size: 16px;
+    margin-bottom: 32px;
+    padding: 0 8px;
+  }
+  .box {
+    flex-direction: column;
+    gap: 24px;
+    align-items: center;
+    width: 100%;
+    max-width: 100vw;
+    padding: 0 4px;
+  }
+  .box-content {
+    width: 98vw;
+    max-width: 370px;
+    min-width: 0;
+    height: auto;
+    padding: 20px 10px 20px 10px;
+    border-radius: 18px;
+  }
+  .box-vector {
+    width: 56px;
+    height: 56px;
+    border-radius: 18px;
+    margin-bottom: 10px;
+  }
+  .titleforbox {
+    font-size: 20px;
+    margin-bottom: 6px;
+  }
+  .p-sab-serv {
+    font-size: 13px;
+    margin-bottom: 16px;
+  }
+  .list-for-item {
+    font-size: 13px;
+  }
+  .list-for-item li {
+    margin-bottom: 12px;
+    padding-left: 32px;
+  }
+  .list-for-item li::before {
+    width: 20px;
+    height: 20px;
+    background-size: 20px 20px;
+  }
+
+  /* Client Testimonials section */
+  .clients-title {
+    font-size: 26px;
+    margin: 36px auto 0 auto;
+    width: 100%;
+    text-align: center;
+  }
+  .clients-subtitle {
+    font-size: 14px;
+    margin-bottom: 24px;
+    padding-left: 0;
+    white-space: normal;
+    text-align: center;
+  }
+  .testimonials-list {
+    flex-direction: column;
+    gap: 18px;
+    padding: 0 4px 20px 4px;
+    align-items: center;
+  }
+  .testimonial-card,
+  .testimonial-card-highlighted {
+    width: 98vw;
+    max-width: 370px;
+    min-width: 0;
+    height: auto;
+    padding: 14px 10px 16px 10px;
+    border-radius: 18px;
+    margin: 0;
+  }
+  .stars {
+    font-size: 15px;
+    padding: 3px 10px;
+    margin-bottom: 6px;
+  }
+  .view-all-btn {
+    margin: 18px auto 0 auto;
+    font-size: 15px;
+    padding: 8px 20px;
+    border-radius: 16px;
+    width: auto;
   }
 }
