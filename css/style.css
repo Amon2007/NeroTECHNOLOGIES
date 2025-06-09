@@ -149,8 +149,7 @@ nav a {
   font-weight: 700;
   border-radius: 40px;
   background: #d8cfcf;
-  padding: 18px 46px;
-
+  padding: 18px 49px;
   margin-top: 56px;
   text-decoration: none;
   color: black;
@@ -164,129 +163,131 @@ nav a {
   color: black;
 }
 
-.background{
-    background: url(../img/bck.jpg);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+.background {
+  background: url(../img/bck.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 .content {
-    display: flex;
-    margin-left: 680px;
-    padding-top: 193px;
-    gap: 20px;
-    flex-direction: column;
+  display: flex;
+  margin-left: 680px;
+  padding-top: 193px;
+  gap: 20px;
+  flex-direction: column;
 }
-p, h2{
-    color:white;
+p,
+h2 {
+  color: white;
 }
-.divbefzag{
-    width: 187px;
-    height: 28px;
-    flex-shrink: 0;
-    aspect-ratio: 187/28;
-    display:flex;
-    flex-direction: column;
+.divbefzag {
+  width: 187px;
+  height: 28px;
+  flex-shrink: 0;
+  aspect-ratio: 187/28;
+  display: flex;
+  flex-direction: column;
 }
-.befzag{
-    font-family: Bakbak One;
-    font-size: 20px;
-    font-weight: 400
+.befzag {
+  font-family: Bakbak One;
+  font-size: 20px;
+  font-weight: 400;
 }
-.divzag{
-    width:535px;
-    height:84px;
-    display:flex;
-    flex-direction: column;
-    flex-shrink: 0;
+.divzag {
+  width: 535px;
+  height: 84px;
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 0;
 }
-.zag{
-    text-shadow: 0px 4px 70px rgba(242, 204, 135, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
-    font-family: Inter;
-    font-size: 32px;
-    font-weight: 200;
+.zag {
+  text-shadow: 0px 4px 70px rgba(242, 204, 135, 0.25),
+    0px 4px 4px rgba(0, 0, 0, 0.25);
+  font-family: Inter;
+  font-size: 32px;
+  font-weight: 200;
 }
-.divabout{
-    width:781px;
-    height:330px;
-    display:flex;
-    flex-direction: column;
-    flex-shrink: 0;
-    aspect-ratio: 71/30;
+.divabout {
+  width: 781px;
+  height: 330px;
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 0;
+  aspect-ratio: 71/30;
 }
-.about{
-    font-family:Bai Jamjuree;
-    font-size: 24px;
-    font-weight: 400;
+.about {
+  font-family: Bai Jamjuree;
+  font-size: 24px;
+  font-weight: 400;
 }
 .bottomrow {
   display: flex;
   gap: 40px;
 }
-.misall{
+.misall {
   width: 368px;
   display: flex;
   flex-direction: column;
   gap: 8px;
 }
-.divmis{ 
-    width:112px;
-    height:28px;
-    display:flex;
-    flex-direction: column;
-    flex-shrink: 0;
-    aspect-ratio: 4/1;
+.divmis {
+  width: 112px;
+  height: 28px;
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 0;
+  aspect-ratio: 4/1;
 }
-.mis{
-    font-family:Bakbak One;
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-}  
-.visall{
-      width: 368px;
+.mis {
+  font-family: Bakbak One;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.visall {
+  width: 368px;
   display: flex;
   flex-direction: column;
   gap: 8px;
 }
-.divmisabout{
-    width:361px;
-    height:75px; 
-    display:flex;
-    flex-direction: column;
-    flex-shrink: 0;
-    aspect-ratio: 361/75;
+.divmisabout {
+  width: 361px;
+  height: 75px;
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 0;
+  aspect-ratio: 361/75;
 }
-.misabout{
-    font-family:Bai Jamjuree;
-    color: #898191;
-    font-size: 20px;
-    font-weight: 400;
-} 
-.divvis{
-    width:98px;
-    height:28px; 
-    display:flex;
-    flex-direction: column;
-    flex-shrink: 0;
-    aspect-ratio: 7/2;
+.misabout {
+  font-family: Bai Jamjuree;
+  color: #898191;
+  font-size: 20px;
+  font-weight: 400;
 }
-.vis{
-    font-family:Bakbak One;
-    font-size: 20px;
-    font-weight: 400;
+.divvis {
+  width: 98px;
+  height: 28px;
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 0;
+  aspect-ratio: 7/2;
 }
-.divvisabout{
-    width:368px;
-    height:100px;
-    display:flex;
-    flex-direction: column;
-    flex-shrink: 0;
+.vis {
+  font-family: Bakbak One;
+  font-size: 20px;
+  font-weight: 400;
 }
-.visabout{
-    font-family:Bai Jamjuree;
-    color: #898191;
-    font-size: 20px;
-    font-weight: 400;
-} 
+.divvisabout {
+  width: 368px;
+  height: 100px;
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 0;
+}
+.visabout {
+  font-family: Bai Jamjuree;
+  color: #898191;
+  font-size: 20px;
+  font-weight: 400;
+}
