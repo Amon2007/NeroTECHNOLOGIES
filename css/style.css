@@ -353,3 +353,63 @@ h2 {
     gap: 32px;
   }
 }
+
+/* CSS 4 ЧАСТИ САЙТА */
+.background2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background: linear-gradient(180deg, #21112F 1.63%, #010002 56.74%);
+    height: 900px;
+    width: 100%;
+}
+.txt{
+    text-align: center;
+    width:328px;
+    height:108px;
+    margin-top:166px;
+    margin-bottom:626px;
+}
+.zag2{
+    color: #FFF;
+    font-family: "Bakbak One";
+    font-size: 48px;
+    font-weight: 400;
+    margin: -3%;
+}
+.poszag{
+    color: #898191;
+    font-family: "Bai Jamjuree";
+    font-size: 24px;
+    font-weight: 400;
+    padding-bottom: 626px;
+    margin-top: 11px;
+}
+.che{
+    margin: 0 0 0 0;
+}
+.zaika{
+    position: absolute;
+    padding-top: 350px;
+}
+.zaikaimg{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+.imgz {
+    max-width: 100%;
+    width: 300px;
+    height: auto;
+    border-radius: 10px;
+    border: solid white 1px;
+    
+}
+.zikatext {
+    margin-top: 20px;
+    text-align: center;
+    color: white;
+    font-family: "Bai Jamjuree";
+}
