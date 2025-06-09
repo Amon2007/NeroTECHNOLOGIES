@@ -57,7 +57,7 @@ nav {
   margin-left: 200px;
   border: 1px solid rgb(255, 255, 255);
   border-radius: 3rem;
-  padding: 9px 17px;
+  padding: 9px 12px;
   background-color: rgba(0, 0, 0, 0.5);
   backdrop-filter: blur(10px);
   z-index: 1000;
@@ -290,4 +290,97 @@ h2 {
   color: #898191;
   font-size: 20px;
   font-weight: 400;
+}
+
+.clients-reviews {
+  width: 0;
+  height: 535px;
+  flex-shrink: 0;
+}
+.clients-title {
+  font-family: "Bakbak One", sans-serif;
+  font-size: 44px;
+  font-weight: 400;
+  margin: 85px 586px 0;
+  width: max-content;
+}
+.clients-subtitle {
+  color: #898191;
+  font-family: "Bai Jamjuree";
+  font-size: 24px;
+  font-weight: 400;
+  text-align: center;
+  margin-bottom: 64px;
+  white-space: nowrap;
+  padding-left: 618px;
+}
+
+.testimonials-list {
+  display: flex;
+  padding: 65px 92px 45px 92px;
+  flex-direction: row;
+}
+
+.testimonial-card {
+  border: 1px solid #fff;
+  background: #1e1e1e;
+  border-radius: 28px;
+  width: 404px;
+  height: 159px;
+  flex-shrink: 0;
+  min-height: 140px;
+  padding: 21px 22px 24px 22px;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  position: relative;
+}
+.testimonial-card-highlighted {
+  border: 1px solid #fff;
+  background: #1e1e1e;
+  border-radius: 28px;
+  width: 404px;
+  height: 159px;
+  flex-shrink: 0;
+  min-height: 140px;
+  padding: 21px 22px 24px 22px;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  position: relative;
+  margin: 0 74px;
+}
+
+.stars {
+  background: #fff;
+  color: #ffb800;
+  border-radius: 16px;
+  padding: 4px 16px;
+  font-size: 18px;
+  width: fit-content;
+  margin-bottom: 12px;
+  margin-top: 1px;
+}
+
+.view-all-btn {
+  font-family: "Bai Jamjuree";
+  margin: 0 auto;
+  margin: 0 729px;
+  display: block;
+  background: #ededed;
+  color: #222;
+  border: none;
+  border-radius: 22px;
+  padding: 10px 32px;
+  font-size: 20px;
+  font-weight: 500;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: background 0.2s;
+  color: #000;
+}
+.view-all-btn:hover {
+  background: #8e8e8e;
 }
