@@ -18,6 +18,11 @@ html {
   scroll-behavior: smooth;
 }
 
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
 .layer-blue {
   height: 0;
   width: 30rem;
@@ -65,7 +70,7 @@ nav {
   align-items: center;
   gap: 3rem;
   margin-left: 200px;
-  border: 1px solid rgb(255, 255, 255);
+  border: 1.5px solid rgb(255, 255, 255);
   border-radius: 3rem;
   padding: 9px 17px;
   background-color: rgba(0, 0, 0, 0.5);
@@ -583,6 +588,11 @@ h2 {
   box-shadow: 0 4px 24px rgba(0, 0, 0, 0.18);
 }
 
+.nav-list a.active {
+  color: #893bff;
+  transition: color 0.2s, border-bottom 0.2s;
+}
+
 /* Адаптивність для планшетів і мобільних */
 @media (max-width: 900px) {
   header {
@@ -820,4 +830,23 @@ h2 {
     border-radius: 16px;
     width: auto;
   }
+}
+
+/* Animation sections */
+.section-animate {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: opacity 0.6s, transform 0.6s;
+}
+.section-animate.visible {
+  opacity: 1;
+  transform: none;
+}
+.btn,
+.view-all-btn {
+  transition: transform 0.1s;
+}
+.btn:active,
+.view-all-btn:active {
+  transform: scale(0.96);
 }
