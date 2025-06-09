@@ -300,12 +300,19 @@ h2 {
 /* Section service */
 
 .Our-Services {
-  width: 100%;
-  padding: 60px 0 40px 0;
+  padding: 154px 0 40px 0;
   background: transparent;
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: 100%;
+  height: 900px;
+  flex-shrink: 0;
+  background-image: url(../img/Service.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  z-index: -1;
 }
 .title-Service {
   font-family: "Bakbak One", sans-serif;
@@ -321,7 +328,7 @@ h2 {
   font-size: 24px;
   font-weight: 400;
   text-align: center;
-  margin-bottom: 48px;
+  margin-bottom: 122px;
   padding: 0;
 }
 .box {
@@ -330,13 +337,15 @@ h2 {
   gap: 40px;
   justify-content: center;
   width: 100%;
-  max-width: 1200px;
+  max-width: 100px;
 }
 .box-content {
-  background: #232323;
-  border-radius: 24px;
+  background: #1e1e1e;
+  border-radius: 28px;
   padding: 32px 28px 28px 28px;
-  width: 340px;
+  width: 436px;
+  height: 441px;
+  flex-shrink: 0;
   min-height: 380px;
   color: #fff;
   box-shadow: 0 4px 24px rgba(0, 0, 0, 0.12);
@@ -345,27 +354,28 @@ h2 {
   align-items: flex-start;
 }
 .box-vector {
-  width: 56px;
-  height: 56px;
-  background: #353535;
-  border-radius: 16px;
+  width: 87px;
+  height: 87px;
+  flex-shrink: 0;
+  background: #464647;
+  border-radius: 32px;
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-bottom: 18px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.18);
+  margin-bottom: 14px;
+  filter: drop-shadow(4px 10px 16px #000);
 }
 .titleforbox {
   font-family: "Bakbak One", sans-serif;
-  font-size: 24px;
-  font-weight: 700;
+  font-size: 32px;
+  font-weight: 400;
   margin-bottom: 10px;
 }
 .p-sab-serv {
   font-family: "Bai Jamjuree", sans-serif;
   font-size: 16px;
   color: #d1d1d1;
-  margin-bottom: 18px;
+  margin-bottom: 32px;
 }
 .list-for-item {
   font-family: "Bai Jamjuree", sans-serif;
@@ -376,19 +386,26 @@ h2 {
   padding: 0;
 }
 .list-for-item li {
-  margin-bottom: 10px;
+  margin-bottom: 20px;
   position: relative;
-  padding-left: 22px;
+  padding-left: 36px; /* 24px (іконка) + 12px (відступ) */
 }
 .list-for-item li::before {
-  content: "✓";
-  color: #fff;
+  content: "";
   position: absolute;
   left: 0;
-  font-size: 16px;
-  top: 0;
+  top: 2px;
+  width: 24px;
+  height: 24px;
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M6 12L10.2426 16.2426L18.727 7.75732" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>');
+  background-repeat: no-repeat;
+  background-size: 24px 24px;
+  margin-right: 12px;
+  display: inline-block;
+  vertical-align: middle;
 }
 .tree {
+  filter: drop-shadow(4px 4px 10px #000);
 }
 
 /* CSS 4 ЧАСТИ САЙТА */
