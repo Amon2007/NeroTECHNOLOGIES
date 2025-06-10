@@ -50,7 +50,8 @@ header {
   margin: 0 auto;
   padding: 42px 59px 35px 95px;
   overflow: hidden;
-  transition: background 0.3s, backdrop-filter 0.3s;
+  transition: box-shadow 0.3s, background 0.3s;
+  background: transparent;
 }
 
 header h1 {
@@ -386,6 +387,14 @@ h2 {
   filter: drop-shadow(4px 10px 16px #000);
   transition: filter 0.2s;
 }
+.box-vector svg {
+  transition: transform 0.3s cubic-bezier(0.4, 2, 0.6, 1), filter 0.3s;
+}
+
+.box-vector:hover svg {
+  transform: scale(1.12) rotate(-6deg);
+  filter: drop-shadow(0 4px 16px #c286f6cc);
+}
 .box-vector:hover {
   filter: drop-shadow(4px 10px 24px #000);
 }
@@ -589,7 +598,14 @@ h2 {
 }
 
 .nav-list a.active {
-  color: #893bff;
+  background: linear-gradient(
+    to right,
+    #e7d0fa 0%,
+    #cb97f9 50%,
+    #c286f694 100%
+  ); /* Градієнт */
+  -webkit-background-clip: text; /* Обрізає фон по тексту (для Chrome/Safari) */
+  -webkit-text-fill-color: transparent; /* Робить текст прозорим (для Chrome/Safari) */
   transition: color 0.2s, border-bottom 0.2s;
 }
 
@@ -652,6 +668,76 @@ h2 {
   .bottomrow {
     flex-direction: column;
     gap: 32px;
+  }
+  .box {
+    flex-direction: column;
+    gap: 32px;
+    align-items: center;
+  }
+  .box-content {
+    width: 95vw;
+    max-width: 400px;
+    min-width: 0;
+    height: auto;
+    padding: 20px 10px;
+  }
+  .box-vector {
+    width: 56px;
+    height: 56px;
+    border-radius: 18px;
+    margin-bottom: 10px;
+  }
+  .titleforbox {
+    font-size: 20px;
+    margin-bottom: 6px;
+  }
+  .p-sab-serv {
+    font-size: 13px;
+    margin-bottom: 16px;
+  }
+  .list-for-item {
+    font-size: 13px;
+  }
+  .clients-title {
+    font-size: 26px;
+    margin: 36px auto 0 auto;
+    width: 100%;
+    text-align: center;
+  }
+  .clients-subtitle {
+    font-size: 14px;
+    margin-bottom: 24px;
+    padding-left: 0;
+    white-space: normal;
+    text-align: center;
+  }
+  .testimonials-list {
+    flex-direction: column;
+    gap: 18px;
+    padding: 0 4px 20px 4px;
+    align-items: center;
+  }
+  .testimonial-card,
+  .testimonial-card-highlighted {
+    width: 95vw;
+    max-width: 400px;
+    min-width: 0;
+    height: auto;
+    padding: 14px 10px 16px 10px;
+    border-radius: 18px;
+    margin: 0;
+  }
+  .stars {
+    font-size: 15px;
+    padding: 3px 10px;
+    margin-bottom: 6px;
+  }
+  .view-all-btn {
+    margin: 18px auto 0 auto;
+    font-size: 15px;
+    padding: 8px 20px;
+    border-radius: 16px;
+    width: auto;
   }
 }
 @media (max-width: 600px) {
